@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- import materializa CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <!-- Import fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <title>DOM oBJECT</title>
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12">
+                <div id="main" class="card">
+                    <div class="card-content">
+                        <span class="card-title">Task List</span>
+                        <div class="row">
+                            <form id="task-form">
+                                <div class="input-field col s12">
+                                    <input type="text" name="task" id="task" value="Walk the dog">
+                                    <label for="task">New Task</label>
+                                </div>   
+                                <input type="Submit" value="Add Task" class="btn">
+                            </form>
+                        </div>
+                        <div class="card-action">
+                            <h5>Tasks</h5>
+                                <input type="text" id="filter" onkeyup="eventHandler_filter()"placeholder="Search for tasks.." title="Type in a task name">
+                            <ul id="myUl" class="collection">
+                            </ul>
+                            <a href="#" class="clear-tasks btn red">Clear Tasks</a>
+                           
+                            
+                            <!-- <h5>How many minutes you want to finish  the task?</h5>
+                            <input type="text" id="timer" onkeyup="eventHandler_filter()"placeholder="Add time">  
+                            <div class="set time col s12">
+                            <a href="#" class="btn blue" onclick="setTimeout(myFunction, cuantotiempo);">Set Time</a>
+                            <script>
+                            function myFunction() {
+                            alert('Sorry!! you didn´t have time enought to finish.');
+                            }
+                            </script> -->
+                            <!-- <h5>Start the clock</h5>
+<input type="text" id="timer"   onclick="clearInterval(myVar)" placeholder="Add time">  
+<a href="#" class="btn blue" onclick="clearInterval(myVar)";>Stop Time</a>
+<script>
+var myVar = setInterval(myTimer ,1000);
+function myTimer() {
+    var d = new Date();
+  
+}
+</script> -->
+
+<h5>Do your task in less than 5 minutes</h5>
+<a href="#" class="btn blue" onclick="myVar = setTimeout(myFunction, 300000)">Set time</a>
+<a href="#" class="btn purple" onclick="clearTimeout(myVar)">Stop it!</a>
+
+<script>
+function myFunction() {
+    alert("Se te ha acabado el tiempo");
+}
+</script>
+
+ 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Inporta el script de jquery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+     <script src="Codigo_santiago.js"></script>
+
+    </body>
+</html>

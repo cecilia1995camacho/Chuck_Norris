@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Chuck Norris Joke Generator</h2>
+<!-- INTPUT AREA -->
+<form>
+<div>
+    <label for="">Number of Jokes</label>
+    <input type="number" id="number">
+</div>
+<div>
+    <button id="button1" class="get-jokes">Get Jokes</button>
+</div>
+</form>
+
+<!-- OITPUT AREA -->
+<ul class="jokes"></ul>    
+</div>
+<script>src = "APPI.js"</script>
+</body>
+</html>
+
+url = "https://api.icndb.com/jokes/random"+"/"+numberFromInput
+xhr.open("GET", `${url}`, true)
